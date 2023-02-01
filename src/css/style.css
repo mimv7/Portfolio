@@ -13,7 +13,7 @@
   width: 60px;
   height: 3px;
   background-color: #ffa501;
-  margin-top: 25px; }
+  margin: 25px auto 0 auto; }
 
 .sidepanel {
   position: fixed;
@@ -112,6 +112,9 @@
   .title_fz16 {
     font-size: 16px;
     color: #fff; }
+  .title_fx20 {
+    font-size: 20px;
+    line-height: 30; }
   .title_fz48 {
     font-size: 48px;
     line-height: 60px;
@@ -245,7 +248,7 @@
   .about__descr {
     padding-top: 9px; }
     .about__descr .devider {
-      margin-top: 0; }
+      margin: 0; }
   .about__title {
     position: relative;
     padding: 1px 0 15px; }
@@ -293,5 +296,65 @@
     .about__skills::target-text {
       font-size: 12px;
       line-height: 18px; }
+
+.resume {
+  padding-top: 120px; }
+  .resume__title {
+    position: relative;
+    text-align: center; }
+    .resume__title::before {
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      content: "";
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      background: #ffa501; }
+    .resume__title::before {
+      top: -6px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .resume__subtitle {
+    text-align: center; }
+  .resume__wrapper {
+    display: grid;
+    padding: 60px 65px 0 65px;
+    grid-template-columns: repeat(2, 425px);
+    -webkit-column-gap: 135px;
+            column-gap: 135px; }
+  .resume__column-title {
+    position: relative;
+    padding-left: 35px; }
+    .resume__column-title::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #ffa501;
+      border-radius: 100%;
+      left: -7px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .resume ul {
+    list-style-type: none; }
+    .resume ul li {
+      position: relative; }
+      .resume ul li::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: -5px;
+        left: 0px;
+        background-color: #000; }
+  .resume__item-item {
+    padding: 45px 0 0 100px; }
+  .resume__item-body {
+    padding-left: 43px;
+    margin-top: 12px; }
 
 /*# sourceMappingURL=style.css.map */
