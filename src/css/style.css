@@ -347,14 +347,47 @@
         content: "";
         position: absolute;
         width: 1px;
-        height: 100%;
+        height: calc( 100% + 16px );
         top: -5px;
         left: 0px;
         background-color: #000; }
-  .resume__item-item {
-    padding: 45px 0 0 100px; }
-  .resume__item-body {
-    padding-left: 43px;
-    margin-top: 12px; }
+  .resume__item {
+    position: relative; }
+    .resume__item::before {
+      content: "";
+      height: 1px;
+      width: 43px;
+      position: absolute;
+      background-color: #000;
+      top: 68px; }
+    .resume__item-head {
+      position: relative;
+      padding: 45px 0 0 100px; }
+    .resume__item-icon {
+      position: absolute;
+      top: 50px;
+      left: 40px; }
+      .resume__item-icon::before {
+        position: absolute;
+        z-index: -1;
+        top: -20%;
+        left: 0;
+        content: "";
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: #ffa501; }
+      .resume__item-icon img {
+        position: absolute;
+        top: 17px;
+        left: 14px; }
+    .resume__item-location {
+      font-size: 12px;
+      line-height: 18px; }
+    .resume__item-body {
+      padding-left: 43px;
+      margin-top: 12px;
+      font-size: 12px;
+      line-height: 18px; }
 
 /*# sourceMappingURL=style.css.map */

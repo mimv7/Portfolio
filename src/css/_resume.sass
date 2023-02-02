@@ -37,15 +37,37 @@
                 content: ""
                 position: absolute
                 width: 1px
-                height: 100%
+                height: calc( 100% + 16px )
                 top: -5px
                 left: 0px
                 background-color: #000
     &__item
-        &-item
+        position: relative
+        &::before
+            content: ""
+            height: 1px
+            width: 43px
+            position: absolute
+            background-color: #000
+            top: 68px
+
+        &-head
+            position: relative
             padding: 45px 0 0 100px
+        &-icon
+            position: absolute
+            top: 50px
+            left: 40px
+            @include circle
+            img
+                position: absolute
+                top: 17px
+                left: 14px
+        &-location
+            font-size: 12px
+            line-height: 18px
         &-body
             padding-left: 43px
-            margin-top: 12px 
-
-
+            margin-top: 12px
+            font-size: 12px
+            line-height: 18px
