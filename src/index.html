@@ -37,12 +37,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">про меня</a></li>
-                    <li class="menu__link"><a href="#">мой опыт</a></li>
-                    <li class="menu__link"><a href="#">мои навыки</a></li>
-                    <li class="menu__link"><a href="#">мои работы</a></li>
-                    <li class="menu__link"><a href="#">прайс-лист</a></li>
-                    <li class="menu__link"><a href="#">контакты</a></li>
+                    <li class="menu__link"><a href="#about">про меня</a></li>
+                    <li class="menu__link"><a href="#resume">мой опыт</a></li>
+                    <li class="menu__link"><a href="#skills">мои навыки</a></li>
+                    <li class="menu__link"><a href="#portfolio">мои работы</a></li>
+                    <li class="menu__link"><a href="#price">прайс-лист</a></li>
+                    <li class="menu__link"><a href="#contacts">контакты</a></li>
                 </ul>
             </nav>
 
@@ -67,13 +67,13 @@
             <h1 class="title title_fz48 promo__title">Я web-разработчик
                 из <br> Санкт-Петербурга</h1>
             <div class="promo_btns">
-                <a href="#" class="promo_link btn">Портфолио</a>
-                <a href="#" class="promo_link">Про меня </a>
+                <a href="#portfolio" class="promo_link btn">Портфолио</a>
+                <a href="#about" class="promo_link">Про меня </a>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <img src="img/iam.jpg" alt="photo" class="about__photo">
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container">
             <h2 class="title title_fz16 title_fz16black resume__title">Опыт</h2>
             <div class="title title_fz36 resume__subtitle">Чем я буду полезен</div>
@@ -189,7 +189,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fz16 title_fz16black skills__title">Навыки</h2>
             <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
@@ -224,13 +224,68 @@
             </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_fz16black portfolio__title">Портфолио</h2>
             <div class="title title_fz36 portfolio__subtitle">Мои работы</div>
             <div class="devider"></div>
+            <div class="portfolio__wrapper">
+                <a href="https://balloons-test.ru/" class="portfolio__item"><img src="img/ballons.jpg" alt="ballons"></a>
+                <a href="pulse/index.html" class="portfolio__item vertical"><img src="img/pulse.jpg" alt=""></a>
+                <a href="https://2beefit.ru/" class="portfolio__item"><img src="img/2beefit.jpg" alt=""></a>
+                <a href="https://bear-kids.ru/" class="portfolio__item"><img src="img/uber.jpg" alt=""></a>
+                <a href="uber/index.html" class="portfolio__item"><img src="img/uber_car.jpg" alt=""></a>
+            </div>
         </div>
     </section>
+
+    <section class="price" id="price">
+        <div class="container">
+            <h2 class="title title_fz16 title_fz16black price__title">Прайс-лист</h2>
+            <div class="devider"></div>
+            <div class="price__wrapper">
+                <div class="price__item">
+                    <div class="price__type">Простой блок</div>
+                    <div class="price__count">200</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Сложный блок</div>
+                    <div class="price__count">400</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Интерактивный бло</div>
+                    <div class="price__count">800</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Форма</div>
+                    <div class="price__count">200</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Слайдер</div>
+                    <div class="price__count">300</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Модальное окно</div>
+                    <div class="price__count">200</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Анимация в блоке</div>
+                    <div class="price__count">100</div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Адаптация под устойство</div>
+                    <div class="price__count">20% от общей суммы</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contacts" id="contacts">
+
+    </section>
+
+
 
     <script src="js/script.js"></script>
 </body>

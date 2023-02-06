@@ -1,0 +1,39 @@
+.price
+    padding-top: 170px
+    &__title
+        position: relative
+        text-align: center
+        @include circle
+        &::before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__wrapper
+        margin-top: 50px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(4, 1fr)
+        grid-auto-rows: 1fr
+        column-gap: 180px
+        row-gap: 20px
+    &__item
+        position: relative
+        display: flex
+        justify-content: space-between
+        padding-left: 30px
+        &::before
+            content: ""
+            position: absolute
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            background-color: $main-color
+            top: 3px
+            left: 0
+
+
+    &__type
+        font-size: 14px
+        font-weight: 700
+        line-height: 21px
+
