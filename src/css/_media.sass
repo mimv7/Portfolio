@@ -1,0 +1,87 @@
+@media (max-width: 1338px)
+    .sidepanel
+        display: none
+
+@media  (max-width: 1200px)
+    .container
+        max-width: 960px
+    .about
+        &__wrapper
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+        &__skills
+            grid-template: minmax(115px, auto) / repeat(2, 260px)
+            column-gap: 20px
+            &-item
+                grid-template-columns: 40px 195px
+                column-gap: 15px
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .title
+        &_fz36
+            font-size: 30px
+    .about
+        &__wrapper
+            grid-template-columns: 300px 300px
+        &__skills
+            grid-template-columns: 310px
+            grid-auto-rows: minmax(115px, auto)
+            &-item
+                grid-template-columns: 40px 200px
+                column-gap: 20px
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &__fz48
+            font-size: 28px
+    .promo
+        &__title
+            margin-top: 10px
+            line-height: 55px
+    .about
+        &__wrapper
+            grid-template-rows: 340px auto auto
+            grid-template-columns: 1fr
+        &__skills
+            &-item
+                grid-template-columns: 60px 425px
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .title
+        &__fz48
+            font-size: 26px
+    .promo
+        &_btns
+            margin-top: 32px
+        &__title
+            font-size: 35px
+    .menu
+        &__block
+            width: 250px
+    .about
+        &__skills
+            &-item
+                grid-template-columns: 48px 210px
+
+@media (max-width: 415px)
+    .promo
+        min-height: 660px
+    .about
+        padding-top: 10px
+        &__skills
+            &-item
+                grid-template-columns: 48px 210px
+
+@media (max-width: 319px)
+    .promo
+        padding-top: 85px
+        min-height: 560px
+        &__title
+            font-size: 30px
