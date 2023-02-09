@@ -15,6 +15,16 @@
             &-item
                 grid-template-columns: 40px 195px
                 column-gap: 15px
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(2, 390px)
+    .skills
+        &__wrapper
+            padding: 10px
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr
+        &__item
+            margin: 0 auto
 
 @media (max-width: 992px)
     .container
@@ -23,6 +33,7 @@
         &_fz36
             font-size: 30px
     .about
+        padding: 80px 10px 0
         &__wrapper
             grid-template-columns: 300px 300px
         &__skills
@@ -31,6 +42,9 @@
             &-item
                 grid-template-columns: 40px 200px
                 column-gap: 20px
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(2, 260px)
 
 @media (max-width: 768px)
     .container
@@ -49,6 +63,14 @@
         &__skills
             &-item
                 grid-template-columns: 60px 425px
+    .resume
+        padding-top: 85px
+        &__wrapper
+            grid-template-columns: 1fr
+        &__column
+            margin-bottom: 40px
+    .skills
+        padding-top: 85px
 
 @media (max-width: 576px)
     .container
@@ -69,12 +91,19 @@
         &__skills
             &-item
                 grid-template-columns: 48px 210px
+    .resume
+        padding-top: 40px
+        &__column
+            &-title
+                font-size: 26px
+    .skills
+        padding-top: 40px
 
 @media (max-width: 415px)
     .promo
         min-height: 660px
     .about
-        padding-top: 10px
+        padding-top: 85px
         &__skills
             &-item
                 grid-template-columns: 48px 210px
@@ -85,3 +114,10 @@
         min-height: 560px
         &__title
             font-size: 30px
+    .resume
+        &__wrapper
+            padding: 34px 14px 0 13px
+        &__column
+            margin-bottom: 8px
+            &-title
+                font-size: 20px
