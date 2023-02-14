@@ -21,11 +21,22 @@
     .skills
         &__wrapper
             padding: 10px
-            grid-template-columns: 1fr
-            grid-template-rows: 1fr
         &__item
-            margin: 0 auto
-
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 400px)
+            grid-auto-rows: 400px
+            gap: 45px
+            justify-content: space-around
+            .vertical
+                grid-row: unset
+                grid-column: unset
+    .contacts
+        &__descr
+            width: 322px
+        &__form
+            grid-template-columns: repeat(2, 210px)
+            gap: 10px
 @media (max-width: 992px)
     .container
         max-width: 720px
@@ -45,6 +56,17 @@
     .resume
         &__wrapper
             grid-template-columns: repeat(2, 260px)
+    .contacts
+        &__wrapper
+            grid-template-columns: 400px 585px
+        &__form
+            grid-template-columns: repeat(2,152px)
+            gap: 18px
+        &__triggers
+            padding-top: 5px
+
+
+
 
 @media (max-width: 768px)
     .container
@@ -72,6 +94,24 @@
     .skills
         padding-top: 85px
 
+    .price
+        &__wrapper
+            grid-template-columns: repeat(2, 246px)
+            column-gap: 40px
+    .contacts
+        &__wrapper
+            display: flex
+            width: 340px
+            padding: 0
+            margin: 0 auto
+        &__photo
+            display: none
+        &__form
+            grid-template-columns: repeat(2, 1fr)
+            gap: 10px
+        &__triggers
+            padding-top: 5px
+
 @media (max-width: 576px)
     .container
         max-width: 100%
@@ -98,8 +138,24 @@
                 font-size: 26px
     .skills
         padding-top: 40px
+        &__item
+            width: 100%
+    .contacts
+        &__wrapper
+            display: flex
+            width: 300px
+            padding: 0
+            margin: 0 auto
+        &__form
+            display: block
+        &__input
+            margin: 15px
+            input
+                padding: 10px
+        &__triggers
+            padding-top: 5px
 
-@media (max-width: 415px)
+@media (max-width: 416px)
     .promo
         min-height: 660px
     .about
@@ -107,6 +163,17 @@
         &__skills
             &-item
                 grid-template-columns: 48px 210px
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 300px)
+            img
+                width: 300px
+                height: 100%
+    .price
+        padding-top: 40px
+        &__wrapper
+            grid-template-columns: repeat(1, 300px)
+            column-gap: 30px
 
 @media (max-width: 319px)
     .promo
@@ -114,6 +181,9 @@
         min-height: 560px
         &__title
             font-size: 30px
+    .about
+        &__photo
+            width: 290px
     .resume
         &__wrapper
             padding: 34px 14px 0 13px
@@ -121,3 +191,32 @@
             margin-bottom: 8px
             &-title
                 font-size: 20px
+    .portfolio
+        &__wrapper
+            width: 300px
+    .price
+        padding-top: 50px
+    .contacts
+        &__wrapper
+            display: flex
+            width: 317px
+            padding: 0
+            margin: 0 auto
+        &__form
+            display: block
+            width: 300px
+        &__input
+            margin: 10px
+            input
+                padding: 10px
+        &__textarea
+            margin: 10px
+        &__triggers
+            padding-top: 25px
+            display: flex
+            flex-wrap: wrap-reverse
+        &__policy
+            margin-bottom: 20px
+        &__btn
+            margin: 0 auto
+            
